@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Spotity-frontend';
+
+  regionVisible:String = '';
+
+  verArtista(id :number){
+    this.regionVisible = "artistas";
+   
+    console.log('Ver artista con ID: ' + id);
+    
+
+  }
+
+  verPlayList(id : number){
+
+    this.regionVisible = "playlists";
+    console.log('Ver playlist con ID: ' + id);
+  }
 }
